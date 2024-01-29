@@ -108,6 +108,7 @@ public class Homework3 {
 			}
 			indexLocation[x] = r1;
 		}
+		
 		int drawNum = 0;
 		for (int i = 0; i < 6; i++) {
 			drawNum = lucky[indexLocation[i]];
