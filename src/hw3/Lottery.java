@@ -12,9 +12,8 @@ public class Lottery {
 //		請您設計一隻程式,讓阿文可以輸入他不想要的數字(1~9),畫面會顯示他可以選擇的號碼與總數
 		System.out.println("1~9 choose one");
 		int hate = 0;
-		if (sc.hasNextInt()) {
-			hate = sc.nextInt();
-		}
+		hate = sc.nextInt();
+
 		int[] lucky = new int[49];
 		int luck = 1, index = 0, count = 0;
 		for (; luck < 50; luck++) {

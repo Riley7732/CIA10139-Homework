@@ -12,9 +12,8 @@ public class Borrow {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("要借多少錢？");
 		int needMoney = 0;
-		if (sc.hasNextInt()) {
-			needMoney = sc.nextInt();
-		}
+		needMoney = sc.nextInt();
+
 		System.out.print("有錢可借的員工編號: ");
 		int[][] colleague = { { 25, 32, 8, 19, 27 }, { 2500, 800, 500, 1000, 1200 } };
 		int count = 0;

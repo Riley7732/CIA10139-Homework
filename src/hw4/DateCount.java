@@ -11,20 +11,17 @@ public class DateCount {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("輸入三個整數代表西元年, 月, 日");
 		int year = 0, month = 0, day = 0;
-		if (sc.hasNextInt()) {
-			year = sc.nextInt();
-			month = sc.nextInt();
-			day = sc.nextInt();
-		}
-		
+		year = sc.nextInt();
+		month = sc.nextInt();
+		day = sc.nextInt();
+
 		int sumDate = 0, error = 0;
 		int[] date = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 		if ((year % 4 != 0) || ((year % 4 == 0) && (year % 100 == 0) && (year % 400 != 0))) {
-		}
-		else {
+		} else {
 			date[1] += 1;
 		}
-		
+
 		for (int i = 0; i < (month - 1); i++) {
 			if ((day > date[month - 1]) || (month > 12)) {
 				System.out.println("輸入錯誤！");
