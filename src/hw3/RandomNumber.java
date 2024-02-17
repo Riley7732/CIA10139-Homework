@@ -41,6 +41,8 @@ public class RandomNumber {
 			}
 		}
 
+		sc.close();
+
 	}
 
 }

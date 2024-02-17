@@ -1,5 +1,6 @@
 package hw6;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CalTest {
@@ -26,9 +27,13 @@ public class CalTest {
 				break;
 			} catch (CalException e) {
 				System.out.println(e.getMessage());
-//				e.printStackTrace();
+			} catch (InputMismatchException e) {
+				System.out.println("輸入錯誤");
+				sc.nextLine();
 			}
 		}
+
+		sc.close();
 	}
 
 }

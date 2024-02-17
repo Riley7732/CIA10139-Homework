@@ -13,30 +13,30 @@ public class Performance {
 		student[5] = new int[] { 85, 75, 70, 75, 90, 20 };
 		student[6] = new int[] { 75, 70, 79, 85, 89, 99 };
 		student[7] = new int[] { 70, 95, 90, 89, 90, 75 };
-		int highest_Mem = 0;
+		int highestMem = 0;    //記錄分數最高的那位學生
 		int[] count = new int[8];
 		for (int a = 0; a < count.length; a++) {
 			count[a] = 0;
 		}
 
-		for (int j = 0; j < student[0].length; j++) {
-			highest_Mem = 0;
-			for (int i = 0; i < student.length; i++) {
+		for (int j = 0; j < student[0].length; j++) {    //int[6]
+			highestMem = 0;
+			for (int i = 0; i < student.length; i++) {    //int[8]
 				if (i == 0) {
 					continue;
 				} else {
 					if (student[i][j] == 100) {
-						highest_Mem = i;
+						highestMem = i;
 						break;
 					} else {
-						if (student[i][j] > student[highest_Mem][j]) {
-							highest_Mem = i;
+						if (student[i][j] > student[highestMem][j]) {
+							highestMem = i;
 						}
 
 					}
 				}
 			}
-			count[highest_Mem]++;
+			count[highestMem]++;
 		}
 		System.out.println("1號同學考了 " + count[0] + " 次最高分");
 		System.out.println("2號同學考了 " + count[1] + " 次最高分");

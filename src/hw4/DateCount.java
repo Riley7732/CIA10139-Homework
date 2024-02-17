@@ -34,6 +34,8 @@ public class DateCount {
 			sumDate += day;
 			System.out.println("日期為 " + year + " 的第 " + sumDate + " 天");
 		}
+
+		sc.close();
 	}
 
 }

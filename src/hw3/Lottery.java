@@ -13,6 +13,7 @@ public class Lottery {
 		System.out.println("1~9 choose one");
 		int hate = 0;
 		hate = sc.nextInt();
+		sc.close();
 
 		int[] lucky = new int[49];
 		int luck = 1, index = 0, count = 0;

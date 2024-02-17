@@ -27,6 +27,8 @@ public class Triangle {
 			System.out.println("其他三角形");
 		}
 
+		sc.close();
+
 	}
 
 }

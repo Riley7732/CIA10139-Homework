@@ -24,6 +24,7 @@ public class Borrow {
 			}
 		}
 		System.out.print("共 " + count + " 人");
+		sc.close();
 	}
 
 }

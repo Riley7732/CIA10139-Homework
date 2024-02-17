@@ -35,7 +35,7 @@ public class Square {
 
 	public static void main(String[] args) {
 
-//	請設計一個方法為starSquare(int width, int height),當使用者鍵盤輸入寬與高時,即會印出對應的*長方形,如圖:
+//	請設計一個方法為starSquare(int width, int height),當使用者鍵盤輸入寬與高時,即會印出對應的*長方形
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("請輸入長方形的寬與高");
@@ -44,6 +44,8 @@ public class Square {
 
 		Square square = new Square(width, height);
 		square.starSquare();
+
+		sc.close();
 
 	}
 
